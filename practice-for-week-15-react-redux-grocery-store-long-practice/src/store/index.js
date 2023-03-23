@@ -1,8 +1,6 @@
-import { configureStore, createStore, combineReducers, applyMiddleware, compose } from 'redux'
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 
-const initialState = {item: {1: {"id": 1, "name": "Longos - Greek Salad", "liked": false}}}
-
-const store = configureStore(initialState)
+// const initialState = {item: {1: {"id": 1, "name": "Longos - Greek Salad", "liked": false}}}
 
 const rootReducer = combineReducers({
     // items: itemReducer
