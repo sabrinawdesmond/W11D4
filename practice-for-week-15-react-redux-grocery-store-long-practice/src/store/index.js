@@ -1,9 +1,10 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
-
+import produceReducer from './produce';
+import { populateProduce } from './produce';
 // const initialState = {item: {1: {"id": 1, "name": "Longos - Greek Salad", "liked": false}}}
 
 const rootReducer = combineReducers({
-    // items: itemReducer
+    produce: produceReducer
 })
 
 

@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import { Provider } from 'react-redux';
 import configureStore from './store'
+import { populateProduce } from './store/produce';
 import App from './App';
+
 
 const store = configureStore()
 
 if (process.env.NODE_ENV !== "production") {
   window.store = store;
+  window.populateProduce = populateProduce
 }
 
 function Root() {
